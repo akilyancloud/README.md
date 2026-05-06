@@ -1,6 +1,10 @@
 📡 Communication avec un serveur Web (Ubuntu)
 
+- Tous les fichiers cité ci-dessous sont à télécharger sont mise à dispositions mise appart les fichiers Iso ainsi que la Machine virtuelle !!
+
+
 Ce projet consiste à créer un système complet permettant à un ESP32 de recevoir des commandes depuis une page web (LED, buzzer), envoyer des données vers un serveur et d'afficher ces données en temps réel
+
 
  *Étapes à suivre*
 
