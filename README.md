@@ -91,11 +91,6 @@ Elle est affichée sur la page web
 
 **Important**
 
-Avant de lancer le projet, penser à :
-
-remplacer le nom du WiFi
-remplacer le mot de passe
-remplacer l’adresse IP de l’ESP32
-remplacer l’adresse IP du serveur Ubuntu
+Avant de lancer le projet, penser à remplacer le nom du WiFi, le mot de passe, l’adresse IP de l’ESP32 ainsi que l’adresse IP du serveur Ubuntu.
 
 
