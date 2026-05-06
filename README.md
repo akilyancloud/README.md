@@ -1,33 +1,26 @@
 📡 Communication avec un serveur Web (Ubuntu)
 
-Ce projet consiste à créer un système complet permettant à un ESP32 de :
+Ce projet consiste à créer un système complet permettant à un ESP32 de recevoir des commandes depuis une page web (LED, buzzer), envoyer des données vers un serveur et d'afficher ces données en temps réel
 
-recevoir des commandes depuis une page web (LED, buzzer)
-envoyer des données vers un serveur
-afficher ces données en temps réel
+ *Étapes à suivre*
 
-🧭 Étapes à suivre
-
-🖥️ 1. Installer une machine virtuelle Ubuntu
+1. Installer une machine virtuelle Ubuntu
 
 Installer un logiciel de virtualisation (VirtualBox ou VMware)
 Télécharger une image ISO d’Ubuntu
 Créer une machine virtuelle
 Installer Ubuntu
 
-➡️ Une fois terminé, ouvrir le terminal Ubuntu
+Une fois terminé, ouvrir le terminal Ubuntu puis installer le serveur web (Apache + PHP)
 
-🌐 2. Installer le serveur web (Apache + PHP)
+**Les fichiers du site seront accessibles dans :
+/var/www/html**
 
-Installer Apache (serveur web)
-Installer PHP (traitement des données)
+2. Créer un dossier pour le projet ( NOM.DU.FICHIER)
+( Pour se rendre dans les fichiers var ou autre vous devez taper la commande " su - " pour passer en mode administrateur et pour continuer le projet )
 
-📁 Les fichiers du site seront accessibles dans :
-/var/www/html
 
-Créer un dossier pour le projet (ex : btsciel)
-
-📁 3. Créer les fichiers du projet
+3.Créer les fichiers du projet
 
 🔹 data.php
 
@@ -44,7 +37,7 @@ une LED
 un buzzer
 Se met à jour automatiquement toutes les quelques secondes
 
-📶 4. Configurer l’ESP32
+Configuration de votre **ESP32**.
 
 Remplacer :
 le nom du WiFi (SSID) par le vôtre
@@ -53,12 +46,9 @@ Remplacer également :
 l’adresse IP du serveur Ubuntu
 l’adresse IP de l’ESP32 dans la page web
 
-➡️ L’ESP32 :
+L’ESP32 qui envoie des données au serveur et qui reçoit des commandes depuis le navigateur.
 
-envoie des données au serveur
-reçoit des commandes depuis le navigateur
-
-🔌 5. Brancher les composants
+*Brancher les composants sur une breadboard.*
 
 💡 LED
 
@@ -70,38 +60,32 @@ Avec une résistance (~220Ω)
 Connecté à une broche GPIO
 Alimenté en 3.3V et GND
 
-➡️ Ces composants permettent de tester les commandes
-
-🔄 6. Comprendre le fonctionnement
-
-👉 Depuis la page web
+- Depuis la page web
 
 L’utilisateur clique sur un bouton
 Une requête HTTP est envoyée à l’ESP32
 L’ESP32 exécute l’action (LED ou buzzer)
 
-👉 Depuis l’ESP32
+- Depuis l’ESP32
 
 Il génère une valeur (ex : nombre aléatoire)
 Il l’envoie au serveur Ubuntu
 
-👉 Côté serveur
+- Côté serveur
 
 La valeur est reçue
 Elle est enregistrée dans des fichiers
 Elle est affichée sur la page web
 
-🚀 Résultat final
+**Résultat final**
 
-À la fin du projet, tu obtiens :
+- Un ESP32 connecté au WiFi
+- Une page web interactive
+- Un contrôle à distance (LED + buzzer)
+- Un envoi automatique de données
+- Un affichage en temps réel
 
-✅ Un ESP32 connecté au WiFi
-✅ Une page web interactive
-✅ Un contrôle à distance (LED + buzzer)
-✅ Un envoi automatique de données
-✅ Un affichage en temps réel
-
-⚠️ Important
+**Important**
 
 Avant de lancer le projet, penser à :
 
@@ -110,11 +94,4 @@ remplacer le mot de passe
 remplacer l’adresse IP de l’ESP32
 remplacer l’adresse IP du serveur Ubuntu
 
-🧠 Compétences acquises
 
-Ce projet permet de comprendre :
-
-la communication réseau entre appareils
-le fonctionnement des requêtes HTTP (GET / POST)
-l’interaction entre matériel (ESP32) et page web
-le stockage et affichage de données dynamiques
