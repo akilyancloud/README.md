@@ -15,7 +15,7 @@ Télécharger une image ISO d’Ubuntu
 Créer une machine virtuelle
 Installer Ubuntu
 
-Une fois terminé, ouvrir le terminal Ubuntu puis installer le serveur web (Apache + PHP)
+Une fois terminé, ouvrez le terminal Ubuntu puis installer le serveur web (Apache + PHP)
 
 **Les fichiers du site seront accessibles dans :
 /var/www/html**
